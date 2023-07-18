@@ -24,14 +24,14 @@ release_name="Release${CI_TAG}"  # 替换为新 Release 的名称
 release_body="Release notes：${CI_TAG}，CI_ARCHIVE_PATH=${CI_ARCHIVE_PATH}"  # 替换为新 Release 的说明文本
 
 
-# 获取文件列表
-file_array=( "${CI_ARCHIVE_PATH}"/* )
-# 打印所有文件路径
-for file in "${file_array[@]}"; do
-    if [[ -f "$file" ]]; then
-        release_body="${release_body},$(basename "$file")"
-    fi
-done
+## 获取文件列表
+#file_array=( "${CI_ARCHIVE_PATH}"/* )
+## 打印所有文件路径
+#for file in "${file_array[@]}"; do
+#    if [[ -f "$file" ]]; then
+#        release_body="${release_body},$(basename "$file")"
+#    fi
+#done
 
 
 
