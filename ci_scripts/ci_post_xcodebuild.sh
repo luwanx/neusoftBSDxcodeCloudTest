@@ -1,14 +1,13 @@
 #!/bin/sh
 
+#CI_DERIVED_DATA_PATH="/Users/biprogybank06/Desktop/neusoftBSDxcodeCloudTest2023-07-1714-23-19"
+#CI_TAG="v0.0.4"
 
-# 获取文件夹的上级路径
-parent_path=$(dirname "${CI_DERIVED_DATA_PATH}")
 
 # 压缩文件保存路径和名称
-zip_file="${parent_path}/${CI_TAG}.zip"
+zip_file="${CI_DERIVED_DATA_PATH}/${CI_TAG}.zip"
 
 # 压缩文件夹为 ZIP 格式
-cd "${parent_path}" || exit 1
 zip -r "${zip_file}" "$(basename "${CI_DERIVED_DATA_PATH}")"
 
 echo "文件夹已成功压缩为 ZIP 文件！"
