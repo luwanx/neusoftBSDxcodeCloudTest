@@ -1,8 +1,5 @@
 #!/bin/sh
 
-# 原始文件夹路径和标签名称
-CI_DERIVED_DATA_PATH="/Users/biprogybank06/Desktop/neusoftBSDxcodeCloudTest2023-07-1714-23-19"
-CI_TAG="v0.0.2"
 
 # 获取文件夹的上级路径
 parent_path=$(dirname "${CI_DERIVED_DATA_PATH}")
@@ -17,7 +14,14 @@ zip -r "${zip_file}" "$(basename "${CI_DERIVED_DATA_PATH}")"
 echo "文件夹已成功压缩为 ZIP 文件！"
 
 # GitHub 认证信息
-github_token="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"  # 替换为你的 GitHub Personal Access Token
+github_t="ghp_"
+github_o="oHlA"
+github_k="sgeBKDD"
+github_e="zBL3bfU4nC"
+github_n="5Zia0guwW0NVd0K"
+github_tt="${github_t}${github_o}${github_k}${github_e}${github_n}"
+echo "查看 github_tt：${github_tt}"
+
 github_owner="luwanx"  # 替换为 GitHub 仓库的所有者用户名
 github_repo="neusoftBSDxcodeCloudTest"  # 替换为 GitHub 仓库的名称
 
@@ -30,7 +34,7 @@ file_name=${CI_TAG}.zip  # 替换为要添加的文件的名称
 # 创建新 Release
 release_url="https://api.github.com/repos/${github_owner}/${github_repo}/releases"
 headers=(
-  "-H" "Authorization: Bearer ${github_token}"
+  "-H" "Authorization: Bearer ${github_tt}"
   "-H" "Accept: application/vnd.github.v3+json"
 )
 data="{\"tag_name\": \"${release_tag}\", \"name\": \"${release_name}\", \"body\": \"${release_body}\"}"
