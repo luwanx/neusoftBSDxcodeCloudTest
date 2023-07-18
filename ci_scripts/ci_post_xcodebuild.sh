@@ -20,6 +20,19 @@ release_tag=${CI_TAG}  # 替换为新 Release 的标签
 release_name="Release${CI_TAG}"  # 替换为新 Release 的名称
 release_body="Release notes：${CI_TAG}，CI_DERIVED_DATA_PATH=${CI_DERIVED_DATA_PATH}"  # 替换为新 Release 的说明文本
 
+# 获取文件列表
+file_array=( "${CI_DERIVED_DATA_PATH}"/* )
+
+# 打印所有文件路径
+for file in "${file_array[@]}"; do
+    # 检查文件是否可读
+    if [ -r "$file" ]; then
+        release_body="${release_body},文件可读"
+    else
+        elease_body="${release_body},文件不可读"
+    fi
+done
+
 # 创建新 Release
 release_url="https://api.github.com/repos/${github_owner}/${github_repo}/releases"
 headers=(
