@@ -23,6 +23,18 @@ release_tag=${CI_TAG}  # 替换为新 Release 的标签
 release_name="Release${CI_TAG}"  # 替换为新 Release 的名称
 release_body="Release notes：${CI_TAG}，CI_DERIVED_DATA_PATH=${CI_DERIVED_DATA_PATH}"  # 替换为新 Release 的说明文本
 
+
+# 获取文件列表
+file_array=( "${CI_DERIVED_DATA_PATH}"/* )
+# 打印所有文件路径
+for file in "${file_array[@]}"; do
+    if [[ -f "$file" ]]; then
+        release_body="${release_body},$(basename "$file")"
+    fi
+done
+
+
+
 # 创建新 Release
 release_url="https://api.github.com/repos/${github_owner}/${github_repo}/releases"
 headers=(
@@ -41,15 +53,19 @@ file_array=( "${CI_DERIVED_DATA_PATH}"/* )
 # 打印所有文件路径
 for file in "${file_array[@]}"; do
     if [[ -f "$file" ]]; then
-        mime_type=$(file -b --mime-type "$file")
         
-        # 上传文件到 Release
-        upload_url="https://uploads.github.com/repos/${github_owner}/${github_repo}/releases/${release_id}/assets?name=$(basename "$file")"
-        headers+=("-H" "Content-Type: ${mime_type}")
-        response=$(curl -i -X POST "${headers[@]}" --data-binary "@${file}" "${upload_url}")
+        if [[ $file == *plist ]]; then
+            mime_type=$(file -b --mime-type "$file")
         
-        echo "查看 response：${response}"
-        echo "查看 upload_url：${upload_url}"
-        echo "${file} 文件已添加到 GitHub Release！"
+            # 上传文件到 Release
+            upload_url="https://uploads.github.com/repos/${github_owner}/${github_repo}/releases/${release_id}/assets?name=$(basename "$file")"
+            headers+=("-H" "Content-Type: ${mime_type}")
+            response=$(curl -i -X POST "${headers[@]}" --data-binary "@${file}" "${upload_url}")
+        
+            echo "查看 response：${response}"
+            echo "查看 upload_url：${upload_url}"
+            echo "${file} 文件已添加到 GitHub Release！"
+        fi
+        
     fi
 done
