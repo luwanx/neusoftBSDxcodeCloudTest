@@ -31,7 +31,7 @@ release_id=""
 #获取路径下所有文件名称
 getFileNameInPath() {
     local path=$1
-    local body="$(basename "$path"):"
+    local body="$(basename "$path")"
     # 获取文件列表
     local file_array=( "${path}"/* )
     # 打印所有文件路径
@@ -54,7 +54,7 @@ postPathAllFile(){
         "-H" "Accept: application/vnd.github.v3+json"
     )
     
-    local pathName="$(basename "$path"):"
+    local pathName="$(basename "$path")"
     
     # 获取文件列表
     local file_array=( "${path}"/* )
