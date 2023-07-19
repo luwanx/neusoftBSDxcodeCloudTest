@@ -66,7 +66,7 @@ postPathAllFile(){
             local mime_type=$(file -b --mime-type "$file")
 
             #文件名
-            local fileName="${pathName}-$(basename "$file")"
+            local fileName="${pathName}_$(basename "$file")"
             echo "查看 fileName：${fileName}"
             
             # 上传文件到 Release
