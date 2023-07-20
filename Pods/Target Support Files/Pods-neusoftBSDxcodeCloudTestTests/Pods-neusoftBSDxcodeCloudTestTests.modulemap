@@ -1,0 +1,6 @@
+framework module Pods_neusoftBSDxcodeCloudTestTests {
+  umbrella header "Pods-neusoftBSDxcodeCloudTestTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

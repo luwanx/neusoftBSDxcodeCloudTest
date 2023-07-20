@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D4B711D3E310E9AF8A38CF1 /* Pods_neusoftBSDxcodeCloudTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CFA372203BC649DE8305B90 /* Pods_neusoftBSDxcodeCloudTest.framework */; };
 		63AB61DD2A64D44A004DE92E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63AB61DC2A64D44A004DE92E /* AppDelegate.swift */; };
 		63AB61DF2A64D44A004DE92E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63AB61DE2A64D44A004DE92E /* SceneDelegate.swift */; };
 		63AB61E12A64D44A004DE92E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63AB61E02A64D44A004DE92E /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 		63AB61F42A64D44B004DE92E /* neusoftBSDxcodeCloudTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63AB61F32A64D44B004DE92E /* neusoftBSDxcodeCloudTestTests.swift */; };
 		63AB61FE2A64D44B004DE92E /* neusoftBSDxcodeCloudTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63AB61FD2A64D44B004DE92E /* neusoftBSDxcodeCloudTestUITests.swift */; };
 		63AB62002A64D44B004DE92E /* neusoftBSDxcodeCloudTestUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63AB61FF2A64D44B004DE92E /* neusoftBSDxcodeCloudTestUITestsLaunchTests.swift */; };
+		98CA0FC798BB3ACAA04C8B7C /* Pods_neusoftBSDxcodeCloudTestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47283C9753B04AC552A91580 /* Pods_neusoftBSDxcodeCloudTestTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		47283C9753B04AC552A91580 /* Pods_neusoftBSDxcodeCloudTestTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_neusoftBSDxcodeCloudTestTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5425D65C613B45E0A4018AA4 /* Pods-neusoftBSDxcodeCloudTestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-neusoftBSDxcodeCloudTestTests.release.xcconfig"; path = "Target Support Files/Pods-neusoftBSDxcodeCloudTestTests/Pods-neusoftBSDxcodeCloudTestTests.release.xcconfig"; sourceTree = "<group>"; };
 		63AB61D92A64D44A004DE92E /* neusoftBSDxcodeCloudTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = neusoftBSDxcodeCloudTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63AB61DC2A64D44A004DE92E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		63AB61DE2A64D44A004DE92E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +53,10 @@
 		63AB61F92A64D44B004DE92E /* neusoftBSDxcodeCloudTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = neusoftBSDxcodeCloudTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		63AB61FD2A64D44B004DE92E /* neusoftBSDxcodeCloudTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = neusoftBSDxcodeCloudTestUITests.swift; sourceTree = "<group>"; };
 		63AB61FF2A64D44B004DE92E /* neusoftBSDxcodeCloudTestUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = neusoftBSDxcodeCloudTestUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		9CFA372203BC649DE8305B90 /* Pods_neusoftBSDxcodeCloudTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_neusoftBSDxcodeCloudTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C34D8709ACA2B77BB6263C8B /* Pods-neusoftBSDxcodeCloudTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-neusoftBSDxcodeCloudTest.debug.xcconfig"; path = "Target Support Files/Pods-neusoftBSDxcodeCloudTest/Pods-neusoftBSDxcodeCloudTest.debug.xcconfig"; sourceTree = "<group>"; };
+		E7291F8559914681DCCC8D5D /* Pods-neusoftBSDxcodeCloudTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-neusoftBSDxcodeCloudTest.release.xcconfig"; path = "Target Support Files/Pods-neusoftBSDxcodeCloudTest/Pods-neusoftBSDxcodeCloudTest.release.xcconfig"; sourceTree = "<group>"; };
+		F77F39EDACAAF05A61866F68 /* Pods-neusoftBSDxcodeCloudTestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-neusoftBSDxcodeCloudTestTests.debug.xcconfig"; path = "Target Support Files/Pods-neusoftBSDxcodeCloudTestTests/Pods-neusoftBSDxcodeCloudTestTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D4B711D3E310E9AF8A38CF1 /* Pods_neusoftBSDxcodeCloudTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				98CA0FC798BB3ACAA04C8B7C /* Pods_neusoftBSDxcodeCloudTestTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +93,8 @@
 				63AB61F22A64D44B004DE92E /* neusoftBSDxcodeCloudTestTests */,
 				63AB61FC2A64D44B004DE92E /* neusoftBSDxcodeCloudTestUITests */,
 				63AB61DA2A64D44A004DE92E /* Products */,
+				EDF26DFE9CD125FE7230D21B /* Pods */,
+				968B29AB234A8030DDB81A94 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -127,6 +139,26 @@
 			path = neusoftBSDxcodeCloudTestUITests;
 			sourceTree = "<group>";
 		};
+		968B29AB234A8030DDB81A94 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9CFA372203BC649DE8305B90 /* Pods_neusoftBSDxcodeCloudTest.framework */,
+				47283C9753B04AC552A91580 /* Pods_neusoftBSDxcodeCloudTestTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EDF26DFE9CD125FE7230D21B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C34D8709ACA2B77BB6263C8B /* Pods-neusoftBSDxcodeCloudTest.debug.xcconfig */,
+				E7291F8559914681DCCC8D5D /* Pods-neusoftBSDxcodeCloudTest.release.xcconfig */,
+				F77F39EDACAAF05A61866F68 /* Pods-neusoftBSDxcodeCloudTestTests.debug.xcconfig */,
+				5425D65C613B45E0A4018AA4 /* Pods-neusoftBSDxcodeCloudTestTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -134,9 +166,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 63AB62032A64D44B004DE92E /* Build configuration list for PBXNativeTarget "neusoftBSDxcodeCloudTest" */;
 			buildPhases = (
+				CA47D3F6C3C3D38F12333101 /* [CP] Check Pods Manifest.lock */,
 				63AB61D52A64D44A004DE92E /* Sources */,
 				63AB61D62A64D44A004DE92E /* Frameworks */,
 				63AB61D72A64D44A004DE92E /* Resources */,
+				636956D82A68FC2B00C89D96 /* Swiftlint */,
 			);
 			buildRules = (
 			);
@@ -151,6 +185,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 63AB62062A64D44B004DE92E /* Build configuration list for PBXNativeTarget "neusoftBSDxcodeCloudTestTests" */;
 			buildPhases = (
+				B314FF61B6DF61D2100F9260 /* [CP] Check Pods Manifest.lock */,
 				63AB61EB2A64D44B004DE92E /* Sources */,
 				63AB61EC2A64D44B004DE92E /* Frameworks */,
 				63AB61ED2A64D44B004DE92E /* Resources */,
@@ -252,6 +287,71 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		636956D82A68FC2B00C89D96 /* Swiftlint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = Swiftlint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"\n";
+		};
+		B314FF61B6DF61D2100F9260 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-neusoftBSDxcodeCloudTestTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CA47D3F6C3C3D38F12333101 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-neusoftBSDxcodeCloudTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		63AB61D52A64D44A004DE92E /* Sources */ = {
@@ -432,6 +532,7 @@
 		};
 		63AB62042A64D44B004DE92E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C34D8709ACA2B77BB6263C8B /* Pods-neusoftBSDxcodeCloudTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -460,6 +561,7 @@
 		};
 		63AB62052A64D44B004DE92E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E7291F8559914681DCCC8D5D /* Pods-neusoftBSDxcodeCloudTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -488,6 +590,7 @@
 		};
 		63AB62072A64D44B004DE92E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F77F39EDACAAF05A61866F68 /* Pods-neusoftBSDxcodeCloudTestTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -508,6 +611,7 @@
 		};
 		63AB62082A64D44B004DE92E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5425D65C613B45E0A4018AA4 /* Pods-neusoftBSDxcodeCloudTestTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";

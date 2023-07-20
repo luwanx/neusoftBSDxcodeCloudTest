@@ -1,0 +1,10 @@
+reporter: xcode
+opt_in_rules:
+  - empty_count
+disabled_rules:
+  - type_name
+  - line_length
+  - trailing_whitespace
+  - vertical_whitespace
+  - unused_optional_binding
+  - trailing_newline
