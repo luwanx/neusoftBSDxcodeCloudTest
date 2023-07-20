@@ -5,7 +5,7 @@ brew install jq
 
 #CI_TAG="v0.0.12"
 # 定义数组
-path_array=("$CI_AD_HOC_SIGNED_APP_PATH" "$CI_APP_STORE_SIGNED_APP_PATH" "$CI_DEVELOPMENT_SIGNED_APP_PATH" "$CI_DEVELOPER_ID_SIGNED_APP_PATH")
+path_array=("$CI_AD_HOC_SIGNED_APP_PATH" "$CI_APP_STORE_SIGNED_APP_PATH" "$CI_DEVELOPMENT_SIGNED_APP_PATH" "$CI_DEVELOPER_ID_SIGNED_APP_PATH" "$CI_ARCHIVE_PATH")
 #path_array=("/Users/biprogybank06/Desktop/test1" "/Users/biprogybank06/Desktop/test2")
 
 # GitHub 认证信息
