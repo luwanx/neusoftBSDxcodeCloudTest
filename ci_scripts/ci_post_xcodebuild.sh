@@ -16,8 +16,6 @@ github_e="zBL3bfU4nC"
 github_n="5Zia0guwW0NVd0K"
 github_tt="${github_t}${github_o}${github_k}${github_e}${github_n}"
 
-echo "查看 github_tt：${github_tt}"
-
 github_owner="luwanx"  # 替换为 GitHub 仓库的所有者用户名
 github_repo="neusoftBSDxcodeCloudTest"  # 替换为 GitHub 仓库的名称
 
@@ -101,9 +99,6 @@ headers=(
 data="{\"tag_name\": \"${release_tag}\", \"name\": \"${release_name}\", \"body\": \"${release_body}\"}"
 response=$(curl -s "${headers[@]}" -d "${data}" "${release_url}")
 release_id=$(echo "${response}" | jq -r '.id')
-
-echo "查看 release_id：${release_id}"
-
 
 
 # 遍历数组
